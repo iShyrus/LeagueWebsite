@@ -1,0 +1,674 @@
+<html>
+<style>
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+}
+    body {
+        background: rgb(204, 226, 202);
+        font-family: helvetica, arial, sans-serif;
+        margin: 1.2em;
+        font-size: 25px;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .topMenu{
+        position:absolute;
+        background:rgb(247, 247, 247);
+        height:65px;
+        width: 550px;
+        top:10px;
+        left:10px;
+        border:none;
+        border-radius:20px;
+        animation: bounceInLeft;
+        animation-duration: 2s;
+        animation-delay:0s;
+        border-radius:10px;
+
+    }
+    .bottomMenu{
+        position:absolute;
+        background:linear-gradient(90deg,white,rgb(239, 255, 236));
+        top:600px;
+        border:none;
+        border-radius:20px;
+        height:400px; 
+        width: 600px;
+        animation: bounceInUp;
+        animation-duration: 2s;
+        animation-delay:0s;
+        border-radius:10px;
+    }
+
+    .movingCloud{
+        position: absolute;
+        width: 100px;
+        z-index: 10;
+        left: 18%;
+        
+        animation: moveCloud 70s ease-in-out forwards;
+        animation-iteration-count: infinite;
+    }
+    .movingCloud1{
+        position: absolute;
+        width: 100px;
+        z-index: 10;
+        left: 18%;
+        animation: moveCloud 80s ease-in-out forwards;
+        animation-iteration-count: infinite;
+    }
+    .movingCloud2{
+        position: absolute;
+        width: 100px;
+        z-index: 10;
+        left: 18%;
+        
+        animation: moveCloud 60s ease-in-out forwards;
+        animation-iteration-count: infinite;
+    }
+    .movingCloud3{
+        position: absolute;
+        width: 100px;
+        z-index: 10;
+        left: 18%;
+        
+        animation: moveCloud1 80s ease-in-out forwards;
+        animation-iteration-count: infinite;
+    }
+    .movingCloud4{
+        position: absolute;
+        width: 100px;
+        z-index: 10;
+        left: 18%;
+        
+        animation: moveCloud2 80s ease-in-out forwards;
+        animation-iteration-count: infinite;
+    }
+    .movingCloud5{
+        position: absolute;
+        width: 100px;
+        z-index: 10;
+        left: 18%;
+        
+        animation: moveCloud2 60s ease-in-out forwards;
+        animation-iteration-count: infinite;
+    }
+    .movingCloud6{
+        position: absolute;
+        width: 100px;
+        z-index: 10;
+        left: 18%;
+        
+        animation: moveCloud2 70s ease-in-out forwards;
+        animation-iteration-count: infinite;
+    }
+    @keyframes moveCloud{
+        0%{
+            transform: translateX(0);
+            left:-200;
+        }
+        50%{
+            transform: translateX(100);
+            left:105%;
+        }     
+        100%{
+            transform: translateX(0);
+            left:-200;
+
+        }   
+}
+@keyframes moveCloud1{
+        0%{
+            transform: translateX(0);
+            left:-350;
+        }
+        50%{
+            transform: translateX(100);
+            left:90%;
+        }     
+        100%{
+            transform: translateX(0);
+            left:-350;
+
+        }   
+}
+@keyframes moveCloud2{
+        0%{
+            left:2100;
+        }
+        
+        50%{
+            left:-100
+        }
+        100%{
+            left:1950;
+
+        }   
+}
+
+
+
+#NA{
+
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(166, 199, 234);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 2s;
+    animation-delay:0s;
+    cursor:pointer;
+
+}
+
+#EUW{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(209, 166, 234);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 2.2s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#EUNE{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(234, 166, 166);
+    height:40px;
+    width: 50px;
+    font-size:15px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 2.4s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#KR{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(234, 193, 166);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 2.6s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#LAN{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(250, 175, 62);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 2.8s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#RU{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(166, 234, 186);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 3.0s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#TR{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(166, 234, 231);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 3.2s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#BR{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(231, 105, 221);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 3.4s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#OCE{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(219, 231, 113);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 3.6s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+#LAS{
+    position:absolute;
+    top:435px;
+    left:1218px;
+    border:none;
+    background:rgb(233, 107, 107);
+    height:40px;
+    width: 50px;
+    font-size:19px;
+    border-radius: 10px;
+    animation: bounceInUp;
+    animation-duration: 3.8s;
+    animation-delay:0s;
+    cursor:pointer;   
+}
+.lolButton{
+    position:absolute;
+    border:none;
+    top:510px;
+    border-radius:10px;
+    background:rgb(184, 180, 179);
+    height:55px;
+    width:55px;
+    opacity:1.0;
+    animation: lolButtonAnim 2.5s;
+    cursor:pointer;
+
+
+}
+
+@keyframes lolButtonAnim{
+
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1.0;
+    }
+}
+
+.input{
+    position:absolute;
+    left:650px;
+    top:430px;
+    height:50px;
+    width:625px;
+    font-size:22px;
+    border: none;
+    animation: bounceInUp;
+    animation-duration: 2s;
+    animation-delay:0s;
+    border-radius:10px;
+}
+
+
+.slideOut {
+    animation: bounceOutDown;
+    animation-duration: 2s;
+    animation-delay:0s;
+}
+#searchSummoner{
+    position:absolute; 
+    left:795px;
+    top:360px; 
+    font-size:28px;
+    animation: lolButtonAnim 2.5s;
+    font-family: "Open Sans";
+}
+#home{
+    position:absolute; 
+    left:245px;
+    top:14px;
+    font-size:22px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color:rgb(134, 134, 134);
+    cursor:pointer;
+    border:none;
+    background:rgb(247, 247, 247);
+}
+#load {
+    height: 50px;
+    width: 50px;
+    background: rgb(129, 129, 129);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    border-radius:15px;
+}
+#load1 {
+    height: 25px;
+    width: 25px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    border-radius:10px;
+    animation: load1 2s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+#backgroundPanel {
+    left:670px;
+    top:450px;
+    height:60px;
+    width:635px;
+    background: rgb(155, 155, 155);
+    position: fixed;
+    margin-top: -25px;
+    margin-left: -25px;
+    border-radius:10px;
+    animation: bounceInUp;
+    animation-duration: 2s;
+    animation-delay:0s;
+    border-radius:10px;
+
+}
+
+@keyframes load1{
+        0%{
+            left:960px;
+            top:513px;
+        }
+        25%{
+            left:960px;
+            top:488px;
+
+        }
+        50%{
+            left:985px;
+            top:488px;
+    
+        }     
+        75%{
+            left:985px;
+            top:513px;
+
+        }
+
+        100%{
+            left:960px;
+            top:513px;
+        }   
+}
+#movingPanel{
+    height:60px;
+    width:60px;
+    background:rgb(166, 199, 234);
+    border-radius:10px;
+    animation: movingPanel1 5s ease-in-out forwards;
+    position:absolute;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes movingPanel1{
+        0%{
+            left:0px;
+            top:0px;
+        }
+        50%{
+            left:575px;
+            top:0px;
+        }
+        100%{
+            left:0px;
+            top:0px;
+        }
+}
+</style>
+
+
+
+
+
+
+
+
+<head>
+    <title>Animate</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> 
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    var toggle = false;
+    var toggle1= true;
+    var regionClicked = "NA";
+    
+
+        $(document).ready(function(){
+          $(".regBtn").click(function(){
+
+
+            if(toggle==false){
+                $(".regBtn").fadeIn();
+
+            $("#EUW").animate({top:'480px'});
+            $("#EUNE").animate({top:'525px'});
+            $("#KR").animate({left:'1278px'});
+            $("#LAN").animate({left:'1338px'});
+            $("#RU").animate({left:'1278px', top:'480px'});
+            $("#TR").animate({left:'1278px', top:'525px'});
+            $("#BR").animate({left:'1338px', top:'480px'});
+            $("#OCE").animate({left:'1338px', top:'525px'});
+            $("#LAS").animate({left:'1398px'});
+            toggle=true;
+            }
+            else{
+                $(".regBtn").animate({left:'1218px',top:'435px'});
+                $(".regBtn").fadeOut("slow");
+                $(this).fadeIn("slow");
+                toggle = false;
+            }
+
+
+          });
+        });
+
+        $(document).on('keyup', function (enter) {
+
+            if(enter.key==='Enter' && document.getElementById('first').value.length !=0){
+                $("#load1").animate({left:'150px'});
+
+                $(".movingCloud").fadeOut(1500);
+                $(".movingCloud1").fadeOut(1500);
+                $(".movingCloud2").fadeOut(1500);
+                $(".movingCloud3").fadeOut(1500);
+                $(".movingCloud4").fadeOut(1500);
+                $(".movingCloud5").fadeOut(1500);
+                $(".movingCloud6").fadeOut(1500);
+                $(".regBtn").animate({left:'2000px'});
+                $('#searchSummoner').fadeOut(1500);
+                $('.lolButton').fadeOut(1500);
+                $('.input').fadeOut(1500);
+                $('.bottomMenu').fadeOut(1500);
+                $('#backgroundPanel').fadeOut(1500);
+
+                $('#load').fadeIn(3500);
+
+
+            }
+
+});
+
+
+        function region(clickedRegion){
+            
+            regionClicked= clickedRegion;
+
+            var element = document.getElementById(clickedRegion);
+            var style;
+            
+            if (window.getComputedStyle) {
+                style = window.getComputedStyle(element);
+            } 
+            else {
+                style = element.currentStyle;
+            }
+            if (!style) {
+            } 
+            else {
+            color = String(style.backgroundColor);
+            }     
+
+            document.getElementById('movingPanel').style.backgroundColor = color
+            
+        }
+
+
+       function summonerUrl(name){
+    if(event.key === 'Enter' && document.getElementById('first').value.length !=0) {
+
+        setTimeout(function() {
+            window.location.href = "http://127.0.0.1:8000/v1/"+regionClicked+"/" + name.value;
+},1650);
+
+    }
+       }
+
+
+
+       function home(){
+  
+        }
+ 
+
+
+        </script> 
+
+
+  
+</head>
+
+
+
+<!--<h1>{{matches.match1}}</h1>
+<h2>{{matches.match2}}</h2>
+-->
+
+
+<body>
+
+<div id="load" style = "display: none;">
+
+    <div id="load1"></div>
+</div>
+<div id ="backgroundPanel">
+    <div id="movingPanel"> </div>
+</div>
+
+<div class="topMenu">
+    <div> <button id="home" onclick="home()">Home</button></div>
+
+</div>
+
+<!-- <div class ="bottomMenu" style="left:250px;">
+</div>
+<div class ="bottomMenu" style="left:1050px;">
+</div> -->
+
+
+<img src ="">
+
+<h2 id="searchSummoner">Search for a Summoner</h2>
+
+<img src="https://i.imgur.com/NpGFf7G.png" style="position:absolute;top:0px; left:-24px;height:170px;">
+
+</body>
+<img src="https://www.pngkey.com/png/full/385-3855642_cloud-hosting-white-cloud-icon.png" class="movingCloud"style ="position:absolute;height:50px; top:300px; left:600px;">
+<img src="https://www.pngkey.com/png/full/385-3855642_cloud-hosting-white-cloud-icon.png" class="movingCloud1"style ="position:absolute;height:50px; top:250px; ">
+<img src="https://www.pngkey.com/png/full/385-3855642_cloud-hosting-white-cloud-icon.png" class="movingCloud3"style ="position:absolute;height:50px; top:200px; ">
+<img src="https://www.pngkey.com/png/full/385-3855642_cloud-hosting-white-cloud-icon.png" class="movingCloud2"style ="position:absolute;height:50px; top:200px; ">
+<img src="https://www.pngkey.com/png/full/385-3855642_cloud-hosting-white-cloud-icon.png" class="movingCloud4"style ="position:absolute;height:50px; top:300px; ">
+<img src="https://www.pngkey.com/png/full/385-3855642_cloud-hosting-white-cloud-icon.png" class="movingCloud5"style ="position:absolute;height:50px; top:250px; ">
+<img src="https://www.pngkey.com/png/full/385-3855642_cloud-hosting-white-cloud-icon.png" class="movingCloud6"style ="position:absolute;height:50px; top:200px; ">
+
+
+
+<input type="input" id="first"class="input" name ="summonerName" onkeydown="summonerUrl(this)"/>
+
+    
+
+
+
+<button class="lolButton", style="left:825px;">  
+    <img style="height: 40px;width:40px; opacity:1;" src="https://i.imgur.com/i82qr5D.png">
+</button>
+<button class="lolButton", style="left:1025px;">  
+    <img style="position:absolute; height: 62px; opacity:1; top:-3px;left:4px;" src="https://i.imgur.com/LSKQUyp.png">
+</button>
+
+<button id="EUW" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">EUW</button>
+<button id="EUNE" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">EUNE</button>
+<button id="KR" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">KR</button>
+<button id="LAN" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">LAN</button>
+<button id="RU" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">RU</button>
+<button id="TR" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">TR</button>
+<button id="BR" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">BR</button>
+<button id="OCE" class ="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">OCE</button>
+<button id="LAS" class="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">LAS</button>
+<button id="NA" class="regBtn" style ="font-family: Open Sans;" onclick="region(this.id)">NA</button>
+<!-- <img src= "https://www.clipartmax.com/png/full/243-2431071_white-menu-icon-transparent-png-three-line-menu-button.png" style="position:absolute; height:25px;top: 120px;left: 15px;  cursor:pointer;" > -->
+<h2 style="position:absolute; font-size:12px; top:900px;">perry wang</h2>
+
+
+
+
+
+</html>

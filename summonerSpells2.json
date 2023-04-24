@@ -1,0 +1,73 @@
+[
+    {
+        "id": "SummonerBarrier",
+        "key": "21"
+    },
+    {
+        "id": "SummonerBoost",
+        "key": "1"
+    },
+    {
+        "id": "SummonerDot",
+        "key": "14"
+    },
+    {
+        "id": "SummonerExhaust",
+        "key": "3"
+    },
+    {
+        "id": "SummonerFlash",
+        "key": "4"
+
+    },
+    {
+        "id": "SummonerHaste",
+        "key": "6"
+
+    },
+    {
+        "id": "SummonerHeal",
+        "key": "7"
+    },
+    {
+        "id": "SummonerMana",
+        "key": "13"
+    },
+    {
+        "id": "SummonerPoroRecall",
+        "key": "30"
+    },
+    {
+        "id": "SummonerPoroThrow",
+        "key": "31"
+    },
+    {
+        "id": "SummonerSmite",
+        "key": "11"
+    },
+    {
+        "id": "SummonerSnowURFSnowball_Mark",
+        "key": "39"
+    },
+    {
+        "id": "SummonerSnowball",
+        "key": "32"
+    },
+    {
+        "id": "SummonerTeleport",
+        "key": "12"
+
+    },
+    {
+        "id": "Summoner_UltBookPlaceholder",
+        "key": "54"
+    },
+    {
+        "id": "Summoner_UltBookSmitePlaceholder",
+        "key": "55"
+    }
+
+
+
+
+]

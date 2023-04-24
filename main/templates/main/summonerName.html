@@ -1,0 +1,2034 @@
+<html>
+    <style>
+    body {
+        background: rgb(204, 226, 202);
+        font-family: helvetica, arial, sans-serif;
+        margin: 1.2em;
+        font-size: 25px;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+    .topMenu{
+        position:absolute;
+        background:rgb(247, 247, 247);
+        height:65px;
+        width: 550px;
+        top:10px;
+        left:10px;
+        border:none;
+        border-radius:20px;
+        border-radius:10px;
+
+    }
+    .menu{
+        position:absolute;
+        background:linear-gradient(90deg,white,rgb(239, 255, 236));
+        top:125px;
+        border:none;
+        border-radius:20px;
+        height:1050px; 
+        width: 1500px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+        border-radius:10px;
+    }
+    #home{
+        position:absolute; 
+        left:245px;
+        top:14px;
+        font-size:22px;
+        font-family: "Open Sans";
+        font-weight: bold;
+        color:rgb(134, 134, 134);
+        cursor:pointer;
+        border:none;
+        background:rgb(247, 247, 247);
+}
+    .soloDuoPic{
+        position:absolute; 
+        left:825px; 
+        height:250px;
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .rankFlex{
+        position:absolute; 
+        left:1240px; 
+        height:250px;
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    #profileIcon{
+        position:absolute;
+        left:220px;
+        top:160px;
+        border-radius:70px;
+        height:90px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .profileBackground{
+        position:absolute;
+        left:218px;
+        top:163px;
+        height:93px;
+        width:93px;
+        background:rgb(112, 112, 112);
+        border-radius:70px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .summonerPanel{
+        position:absolute;
+        background-color: rgb(211, 211, 211);
+        top:20px;
+        left:20px;
+        height:120px;
+        width: 490px;
+        border-radius:20px;
+    }
+    .championsPlayedPanel1{
+        position:absolute;
+        background-color: rgb(211, 211, 211);
+        top:170px;
+        left:20px;
+        height:490px;
+        width: 400px;
+        border-radius:20px;
+    }
+    .championsPlayedPanel2{
+        position:absolute;
+        background-color: rgb(211, 211, 211);
+        top:170px;
+        left:20px;
+        height:400px;
+        width: 400px;
+    }
+    .allQueue{
+        position:absolute;
+        background-color: rgb(143, 157, 238);
+        top:10px;
+        left:173px;
+        height:40px;
+        width: 50px;
+        border-radius: 10px;
+        border:none;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size:22px;
+        font-weight: bold;
+
+    }
+
+
+    .champion1{
+        position:absolute;
+        background-color: rgb(240, 240, 240);
+        top:65px;
+        left:20px;
+        height:70px;
+        width: 358px;
+        border-radius: 10px;
+        border:none;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size:22px;
+        font-weight: bold;
+    }
+    .championPlayedIcon1{
+        position:absolute;
+        left:-15px;
+        top:-5px;
+        height:80px;
+        width:80px;
+        background:rgb(112, 112, 112);
+        border-radius:70px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .champion2{
+        position:absolute;
+        background-color: rgb(240, 240, 240);
+        top:150px;
+        left:20px;
+        height:70px;
+        width: 358px;
+        border-radius: 10px;
+        border:none;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size:22px;
+        font-weight: bold;
+    }
+    .championPlayedIcon2{
+        position:absolute;
+        left:-15px;
+        top:-5px;
+        height:80px;
+        width:80px;
+        background:rgb(112, 112, 112);
+        border-radius:70px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .champion3{
+        position:absolute;
+        background-color: rgb(240, 240, 240);
+        top:235px;
+        left:20px;
+        height:70px;
+        width: 358px;
+        border-radius: 10px;
+        border:none;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size:22px;
+        font-weight: bold;
+    }
+    .championPlayedIcon3{
+        position:absolute;
+        left:-15px;
+        top:-5px;
+        height:80px;
+        width:80px;
+        background:rgb(112, 112, 112);
+        border-radius:70px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .champion4{
+        position:absolute;
+        background-color: rgb(240, 240, 240);
+        top:320px;
+        left:20px;
+        height:70px;
+        width: 358px;
+        border-radius: 10px;
+        border:none;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size:22px;
+        font-weight: bold;
+    }
+    .championPlayedIcon4{
+        position:absolute;
+        left:-15px;
+        top:-5px;
+        height:80px;
+        width:80px;
+        background:rgb(112, 112, 112);
+        border-radius:70px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .champion5{
+        position:absolute;
+        background-color: rgb(240, 240, 240);
+        top:405px;
+        left:20px;
+        height:70px;
+        width: 358px;
+        border-radius: 10px;
+        border:none;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size:22px;
+        font-weight: bold;
+    }   
+    .championPlayedIcon5{
+        position:absolute;
+        left:-15px;
+        top:-5px;
+        height:80px;
+        width:80px;
+        background:rgb(112, 112, 112);
+        border-radius:70px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .accountName{
+        position:absolute;
+        top:155px;
+        font-size:32px;
+        font-family: "Open Sans";
+        font-weight: bold;
+        left:330px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    #NA{
+        position:absolute;
+        top:155px;
+        left:635px;
+        border:none;
+        background:rgb(166, 199, 234);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        font-weight: bold;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+
+    #EUW{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(209, 166, 234);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 2.2s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #EUNE{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(234, 166, 166);
+        height:40px;
+        width: 50px;
+        font-size:15px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 2.4s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #KR{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(234, 193, 166);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 2.6s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #LAN{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(250, 175, 62);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 2.8s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #RU{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(166, 234, 186);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 3.0s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #TR{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(166, 234, 231);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 3.2s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #BR{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(231, 105, 221);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 3.4s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #OCE{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(219, 231, 113);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 3.6s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #LAS{
+        position:absolute;
+        top:435px;
+        left:1218px;
+        border:none;
+        background:rgb(233, 107, 107);
+        height:40px;
+        width: 50px;
+        font-size:19px;
+        border-radius: 10px;
+        animation: bounceInUp;
+        animation-duration: 3.8s;
+        animation-delay:0s;
+        cursor:pointer;   
+    }
+    #summonerLevel{
+        position:absolute;
+        top:235px;
+        left:249px;
+        font-size:18px;
+        background-color: rgb(112, 112, 112);
+        font-family: "Open Sans";
+        font-weight: bold;
+        border-radius:6px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .rankedSoloPanel1{
+        position:absolute;
+        height:150px;
+        width:390px;
+        background-color: rgb(211, 211, 211);
+        animation: bounceInLeft;
+        animation-duration: 0.5s;
+        animation-delay:0s;
+    }
+    .rankedSoloPanel2{
+        position:absolute;
+        top:140px;
+        left:810px;
+        height:150px;
+        width:390px;
+        background-color: rgb(211, 211, 211);
+        border-radius:20px;  
+        animation: bounceInLeft;
+        animation-duration: 0.5s;
+        animation-delay:0s;
+    }
+    .rankedFlexPanel1{
+        position:absolute;
+        height:150px;
+        width:390px;
+        background-color: rgb(211, 211, 211);
+        animation: bounceInLeft;
+        animation-duration: 0.5s;
+        animation-delay:0s;
+        
+    }
+    .rankedFlexPanel2{
+        position:absolute;
+        top:140px;
+        left:1225px;
+        height:150px;
+        width:390px;
+        background-color: rgb(211, 211, 211);
+        border-radius:20px;  
+        animation: bounceInLeft;
+        animation-duration: 0.5s;
+        animation-delay:0s;
+    }
+    .rankedSoloTitle{
+        position:absolute;
+        top:140px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size:19px;
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .CHALLENGER{
+        position:absolute;
+        top:170px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(251, 255, 0);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .GRANDMASTER{
+        position:absolute;
+        top:170px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(255, 0, 0);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .MASTER{
+        position:absolute;
+        top:170px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(182, 54, 207);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .DIAMOND{
+        position:absolute;
+        top:170px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(129, 165, 206);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .PLATINUM{
+        position:absolute;
+        top:170px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(62, 141, 121);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .GOLD{
+        position:absolute;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(255, 242, 64);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .SILVER{
+        position:absolute;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(155, 155, 155);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .BRONZE{
+        position:absolute;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(117, 57, 0);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    .IRON{
+        position:absolute;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(110, 110, 110);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .UNRANKED{
+        position:absolute;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(0, 0, 0);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    .rankSoloLP{
+        position:absolute;
+        top:200px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(56, 56, 56);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .rankSoloWinsLosses{
+        position:absolute;
+        top:230px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(56, 56, 56);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+    .rankSoloWinRatio{
+        position:absolute;
+        top:260px;
+        left:1033px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(56, 56, 56);    
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    .rankedFlexTitle{
+        position:absolute;
+        top:140px;
+        left:1450px;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size:19px;
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    .rankedFlexTextDiamond{
+        position:absolute;
+        top:170px;
+        left:1450px;
+        font-family: "Open Sans";
+        font-size:19px;
+        color: rgb(129, 165, 206);
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    .rankFlexLP{
+        position:absolute;
+        top:200px;
+        left:1450px;
+        font-family: "Open Sans";
+        font-size:19px;
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    .rankFlexWinsLosses{
+        position:absolute;
+        top:230px;
+        left:1450px;
+        font-family: "Open Sans";
+        font-size:19px;
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    .rankFlexWinRatio{
+        position:absolute;
+        top:260px;
+        left:1450px;
+        font-family: "Open Sans";
+        font-size:19px;
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay:0s;
+    }
+
+    #soloRank{
+        position:absolute;
+        left:10000px;
+    }
+    #flexRank{
+        position:absolute;
+        left:10000px;
+    }
+    #summonerIcon{
+        position:absolute;
+        left:10000px;
+    }
+
+    #champPlayed1{
+        border-radius:70px;
+        height:80px;
+        width:80px;
+    }
+    #champPlayed2{
+        border-radius:70px;
+        height:80px;
+        width:80px;
+    }
+    #champPlayed3{
+        border-radius:70px;
+        height:80px;
+        width:80px;
+    }
+    #champPlayed4{
+        border-radius:70px;
+        height:80px;
+        width:80px;
+    }
+    #champPlayed5{
+        border-radius:70px;
+        height:80px;
+        width:80px;
+    }
+
+    #game1Panel{
+        position:absolute;
+        background:linear-gradient(20deg,rgb(212, 122, 122),rgb(211, 211, 211));
+        top:50px;
+        left:-40px;
+        height:150px;
+        width: 980px;
+        border-radius:20px;
+    }
+    #game2Panel{
+        position:absolute;
+        background:linear-gradient(20deg,rgb(212, 122, 122),rgb(211, 211, 211));
+        top:220px;
+        left:-40px;
+        height:150px;
+        width: 980px;
+        border-radius:20px;
+    }
+    #game3Panel{
+        position:absolute;
+        background:linear-gradient(20deg,rgb(212, 122, 122),rgb(211, 211, 211));
+        top:390px;
+        left:-40px;
+        height:150px;
+        width: 980px;
+        border-radius:20px;
+    }
+    #game4Panel{
+        position:absolute;
+        background:linear-gradient(20deg,rgb(212, 122, 122),rgb(211, 211, 211));
+        top:560px;
+        left:-40px;
+        height:150px;
+        width: 980px;
+        border-radius:20px;
+    }
+    .queueFont{
+        font-size: 20px;
+        position:absolute;
+
+    }
+    .champRecentlyPlayed{
+        position:absolute;
+        top:60px;
+        left:0px;
+
+    }
+    #defeatStyle{
+        position:absolute;
+        top:112px; 
+        left: 18px;
+        color:rgb(245, 49, 49);
+        font-size:15px;
+        font-weight: bold;
+    }
+    #winStyle{
+        position:absolute;
+        top:112px; 
+        left:15px;
+        color:rgb(28, 167, 1);
+        font-weight: bold;
+        font-size:15px;
+    }
+    .championPlayedPlacement{
+        position:absolute;
+        left:15px;
+        top: 13px;
+        height:80px;
+        width:80px;
+        background:rgb(112, 112, 112);
+        border-radius:20px;
+        animation: bounceInLeft;
+        animation-duration: 1.5s;
+        animation-delay:0s;
+    }
+    .summonerSpellPlacement1{
+        position:absolute;
+        left:29px;
+        top: 98px;
+        height:25px;
+        border-radius:5px;
+    }
+    .summonerSpellPlacement2{
+        position:absolute;
+        left:56px;
+        top: 98px;
+        height:25px;
+        border-radius:5px;
+    }
+    .queuePlayed{
+        position:absolute;
+        inline-size: 1500px;
+        top:-8px; 
+        left:385px;
+        color:rgb(90, 90, 90);
+        font-weight: bold;
+        font-size:20px;
+    }
+    .gameDurationFont{
+        position:absolute;
+        top: 84px;
+        left:100px;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .kdaFont{
+        position:absolute;
+        top: 10px;
+        left:100px;
+        font-family: "Open Sans";
+        font-size: 20px;
+        color:rgb(121, 121, 121);
+    }
+    .kdaRatioFont{
+        position:absolute;
+        top: 30px;
+        left:100px;
+        font-family: "Open Sans";
+        font-size: 20px;
+        color:rgb(121, 121, 121); 
+    }
+    .totalMinionsFont{
+        position:absolute;
+        top: 52px;
+        left:100px;
+        font-family: "Open Sans";
+        font-size: 16px;
+        color:rgb(121, 121, 121); 
+    }
+    .item1{
+        position:absolute;
+        top:30px;
+        left:200px;
+        height:40px;
+        width:40px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .item2{
+        position:absolute;
+        top:30px;
+        left:242px;
+        height:40px;
+        width:40px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .item3{
+        position:absolute;
+        top:30px;
+        left:284px;
+        height:40px;
+        width:40px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .item5{
+        position:absolute;
+        top:72px;
+        left:242px;
+        height:40px;
+        width:40px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .item6{
+        position:absolute;
+        top:72px;
+        left:284px;
+        height:40px;
+        width:40px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .item7{
+        position:absolute;
+        top:51px;
+        left:326px;
+        height:40px;
+        width:40px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .item4{
+        position:absolute;
+        top:72px;
+        left:200px;
+        height:40px;
+        width:40px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+
+    .itemSize{
+        height:40px;
+        width:40px;
+        border-radius:10px;
+    }
+    .minionsPerMinuteFont{
+        position:absolute;
+        top: 69px;
+        left:100px;
+        font-family: "Open Sans";
+        font-size: 13px;
+        color:rgb(121, 121, 121); 
+    }
+    .champ1{
+        position:absolute;
+        top:7px;
+        left:550px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ2{
+        position:absolute;
+        top:35px;
+        left:550px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ3{
+        position:absolute;
+        top:63px;
+        left:550px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ4{
+        position:absolute;
+        top:91px;
+        left:550px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ5{
+        position:absolute;
+        top:119px;
+        left:550px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ6{
+        position:absolute;
+        top:7px;
+        left:700px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ7{
+        position:absolute;
+        top:35px;
+        left:700px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ8{
+        position:absolute;
+        top:63px;
+        left:700px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ9{
+        position:absolute;
+        top:91px;
+        left:700px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champ10{
+        position:absolute;
+        top:119px;
+        left:700px;
+        height:26px;
+        width:26px;
+        border-radius:10px;
+        background-color: rgb(211, 211, 211);
+    }
+    .champSize{
+        height:26px;
+        width:26px;
+        border-radius:10px;
+
+    }
+    .playerNamePlacement{
+        position:absolute;
+        top:5px;
+        left:30px;
+        inline-size: 1500px;
+        font-family: "Open Sans";
+        font-size:13px;
+        color: rgb(95, 95, 95);
+        cursor:pointer;
+
+    }
+    .champTopPlayedPlacement{
+        position:absolute;
+        top:18px;
+        left:155px;
+        font-family: "Open Sans";
+        color: rgb(133, 133, 133);
+        font-size:15px;
+        font-weight: normal;
+
+    }
+    .champPlayedTextFont{
+        position:absolute;
+        top:-5px;
+        left:75px;
+        font-family: "Open Sans";
+        font-size:18px;
+
+    }
+    .champKDARatioPlacement{
+        position:absolute;
+        top:38px;
+        left:177px;
+        font-size:15px;
+        color: rgb(133, 133, 133);
+        font-size:15px;
+        font-weight: normal;
+
+    }
+    .csPlacement{
+        position:absolute;
+        top:18px;
+        left:75px;
+        font-size:15px;
+        color: rgb(133, 133, 133);
+        font-size:15px;
+        font-weight: normal;  
+
+    }
+    .csPerMinPlacement{
+        position:absolute;
+        top:38px;
+        left:75px;
+        font-size:15px;
+        color: rgb(133, 133, 133);
+        font-size:15px;
+        font-weight: normal; 
+    }
+    .winRateChampPlacement{
+        position:absolute;
+        top:38px;
+        left:290px;
+        font-size:15px;
+        color: rgb(133, 133, 133);
+        font-size:15px;
+        font-weight: normal;   
+    }
+    .winRatePercPlacement{
+        position:absolute;
+        top:15px;
+        left:300px;
+        color: rgb(133, 133, 133);
+        font-size:20px;
+        font-weight: normal;   
+    }
+    </style>
+
+<head>
+<title>Animate</title>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+<script>
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+
+<body>
+
+<div class="topMenu">
+    <div> <button id="home">Home</button></div>
+
+</div>
+
+
+<img src="https://i.imgur.com/NpGFf7G.png" class = "avacadoGG" style="position:absolute;top:0px; left:-24px;height:170px;">
+<img src= "https://www.clipartmax.com/png/full/243-2431071_white-menu-icon-transparent-png-three-line-menu-button.png" style="position:absolute; height:25px;top: 120px;left: 15px;  cursor:pointer; display: none;" >
+
+<div class ="menu" style="left:185px;">
+
+    <ol style="position:absolute; left:500px; top:100px;">
+        <div id = 'game1Panel'>
+
+            
+            <input id = 'game1WinLoss' value = {{info.gameWinLoss1}} style = "display: none;">
+            <div class ="championPlayedPlacement" id='championPlayedGame1'>
+                <img src="img.img" id = "championPlayedGame1Pic" style = "border-radius:20px; height:80px;">
+                <div id="game1WinLossFont"></div>
+                <div class ="queuePlayed" id ="queuePlayedGame1"></div>
+            </div>
+            <img class ="summonerSpellPlacement1" id = "game1SummonerSpell1"src= img.img>
+            <img class ="summonerSpellPlacement2"id = "game1SummonerSpell2"src= img.img>
+            <div class = "gameDurationFont"id = "gameDurationGame1"></div>
+            <div class = "kdaFont" id ="kdaGame1"></div>
+            <div class = "kdaRatioFont"id="kdaRatioGame1"></div>
+            <div class = "totalMinionsFont" id="totalMinionsGame1"></div>
+            <div class = "minionsPerMinuteFont" id="minionsPerMinuteGame1"></div>
+            <div class ="item1" id="item1Game1">
+                <img class ="itemSize" id = "item1Game1Img">
+            </div>
+            <div  class ="item2" id="item2Game1">
+                <img class ="itemSize" id = "item2Game1Img">
+            </div>
+            <div class ="item3" id="item3Game2">
+                <img class ="itemSize" id = "item3Game1Img">
+            </div>
+            <div class ="item4" id="item4Game2">
+                <img class ="itemSize" id = "item4Game1Img">
+            </div>
+            <div class ="item5" id="item5Game2">
+                <img class ="itemSize" id = "item5Game1Img">
+            </div>
+            <div class ="item6" id="item6Game2">
+                <img class ="itemSize" id = "item6Game1Img">
+            </div>
+            <div class ="item7" id="item7Game2">
+                <img class ="itemSize" id = "item7Game1Img">
+            </div>
+
+            <div class= "champ1" id = "champ1Game1">
+                <div class ="playerNamePlacement" id = "player1Game1"></div>
+                <img class = "champSize" id = "champ1Game1Pic">
+            </div>
+            <div class= "champ2" id = "champ2Game1">
+                <div class ="playerNamePlacement" id = "player2Game1"></div>
+                <img class = "champSize" id = "champ2Game1Pic">
+            </div>
+            <div class= "champ3" id = "champ3Game1">
+                <div class ="playerNamePlacement" id = "player3Game1"></div>
+                <img class = "champSize" id = "champ3Game1Pic">
+            </div>
+            <div class= "champ4" id = "champ4Game1">
+                <div class ="playerNamePlacement" id = "player4Game1"></div>
+                <img class = "champSize" id = "champ4Game1Pic">
+            </div>
+            <div class= "champ5" id = "champ5Game1">
+                <div class ="playerNamePlacement" id = "player5Game1"></div>
+                <img class = "champSize" id = "champ5Game1Pic">
+            </div>
+            <div class= "champ6" id = "champ6Game1">
+                <div class ="playerNamePlacement" id = "player6Game1"></div>
+                <img class = "champSize" id = "champ6Game1Pic">
+            </div>
+            <div class= "champ7" id = "champ7Game1">
+                <div class ="playerNamePlacement" id = "player7Game1"></div>
+                <img class = "champSize" id = "champ7Game1Pic">
+            </div>
+            <div class= "champ8" id = "champ8Game1">
+                <div class ="playerNamePlacement" id = "player8Game1"></div>
+                <img class = "champSize" id = "champ8Game1Pic">
+            </div>
+            <div class= "champ9" id = "champ9Game1">
+                <div class ="playerNamePlacement" id = "player9Game1"></div>
+                <img class = "champSize" id = "champ9Game1Pic">
+            </div>
+            <div class= "champ10" id = "champ10Game1">
+                <div class ="playerNamePlacement" id = "player10Game1"></div>
+                <img class = "champSize" id = "champ10Game1Pic">
+            </div>
+
+            
+        </div>
+
+        <div id = 'game2Panel'>
+
+            <input id = 'game2WinLoss' value = {{info.gameWinLoss2}} style = "display: none;">
+            <div class ="championPlayedPlacement" id='championPlayedGame2'>
+                <img src="img.img" id = "championPlayedGame2Pic" style = "border-radius:20px; height:80px;">
+                <div id="game2WinLossFont"></div>
+                <div class ="queuePlayed" id ="queuePlayedGame2"></div>
+            </div>
+            <img class ="summonerSpellPlacement1" id = "game2SummonerSpell1"src= img.img>
+            <img class ="summonerSpellPlacement2"id = "game2SummonerSpell2"src= img.img>
+            <div class = "gameDurationFont"id = "gameDurationGame2"></div>
+            <div class = "kdaFont" id ="kdaGame2"></div>
+            <div class = "kdaRatioFont"id="kdaRatioGame2"></div>
+            <div class = "totalMinionsFont" id="totalMinionsGame2"></div>
+            <div class = "minionsPerMinuteFont" id="minionsPerMinuteGame2"></div>
+            <div class ="item1" id="item1Game2">
+                <img class ="itemSize" id = "item1Game2Img">
+            </div>
+            <div  class ="item2" id="item2Game2">
+                <img class ="itemSize" id = "item2Game2Img">
+            </div>
+            <div class ="item3" id="item3Game2">
+                <img class ="itemSize" id = "item3Game2Img">
+            </div>
+            <div class ="item4" id="item4Game2">
+                <img class ="itemSize" id = "item4Game2Img">
+            </div>
+            <div class ="item5" id="item5Game2">
+                <img class ="itemSize" id = "item5Game2Img">
+            </div>
+            <div class ="item6" id="item6Game2">
+                <img class ="itemSize" id = "item6Game2Img">
+            </div>
+            <div class ="item7" id="item7Game2">
+                <img class ="itemSize" id = "item7Game2Img">
+            </div>
+
+
+            <div class= "champ1" id = "champ1Game2">
+                <div class ="playerNamePlacement" id = "player1Game2"></div>
+                <img class = "champSize" id = "champ1Game2Pic">
+            </div>
+            <div class= "champ2" id = "champ2Game2">
+                <div class ="playerNamePlacement" id = "player2Game2"></div>
+                <img class = "champSize" id = "champ2Game2Pic">
+            </div>
+            <div class= "champ3" id = "champ3Game2">
+                <div class ="playerNamePlacement" id = "player3Game2"></div>
+                <img class = "champSize" id = "champ3Game2Pic">
+            </div>
+            <div class= "champ4" id = "champ4Game2">
+                <div class ="playerNamePlacement" id = "player4Game2"></div>
+                <img class = "champSize" id = "champ4Game2Pic">
+            </div>
+            <div class= "champ5" id = "champ5Game2">
+                <div class ="playerNamePlacement" id = "player5Game2"></div>
+                <img class = "champSize" id = "champ5Game2Pic">
+            </div>
+            <div class= "champ6" id = "champ6Game2">
+                <div class ="playerNamePlacement" id = "player6Game2"></div>
+                <img class = "champSize" id = "champ6Game2Pic">
+            </div>
+            <div class= "champ7" id = "champ7Game2">
+                <div class ="playerNamePlacement" id = "player7Game2"></div>
+                <img class = "champSize" id = "champ7Game2Pic">
+            </div>
+            <div class= "champ8" id = "champ8Game2">
+                <div class ="playerNamePlacement" id = "player8Game2"></div>
+                <img class = "champSize" id = "champ8Game2Pic">
+            </div>
+            <div class= "champ9" id = "champ9Game2">
+                <div class ="playerNamePlacement" id = "player9Game2"></div>
+                <img class = "champSize" id = "champ9Game2Pic">
+            </div>
+            <div class= "champ10" id = "champ10Game2">
+                <div class ="playerNamePlacement" id = "player10Game2"></div>
+                <img class = "champSize" id = "champ10Game2Pic">
+            </div>
+
+
+
+        </div>
+        
+        <div id = 'game3Panel'>            
+
+            <input id = 'game3WinLoss' value = {{info.gameWinLoss3}} style = "display: none;">
+            <div class ="championPlayedPlacement" id='championPlayedGame3'>
+                <img src="img.img" id = "championPlayedGame3Pic" style = "border-radius:20px; height:80px;">
+                <div id="game3WinLossFont"></div>
+                <div class ="queuePlayed" id ="queuePlayedGame3"></div>
+            </div>
+            <img class ="summonerSpellPlacement1" id = "game3SummonerSpell1"src= img.img>
+            <img class ="summonerSpellPlacement2"id = "game3SummonerSpell2"src= img.img>
+            <div class = "gameDurationFont"id = "gameDurationGame3"></div>
+            <div class = "kdaFont" id ="kdaGame3"></div>
+            <div class = "kdaRatioFont"id="kdaRatioGame3"></div>
+            <div class = "totalMinionsFont" id="totalMinionsGame3"></div>
+            <div class = "minionsPerMinuteFont" id="minionsPerMinuteGame3"></div>
+            <div class ="item1" id="item1Game3">
+                <img class ="itemSize" id = "item1Game3Img">
+            </div>
+            <div  class ="item2" id="item2Game2">
+                <img class ="itemSize" id = "item2Game3Img">
+            </div>
+            <div class ="item3" id="item3Game2">
+                <img class ="itemSize" id = "item3Game3Img">
+            </div>
+            <div class ="item4" id="item4Game2">
+                <img class ="itemSize" id = "item4Game3Img">
+            </div>
+            <div class ="item5" id="item5Game2">
+                <img class ="itemSize" id = "item5Game3Img">
+            </div>
+            <div class ="item6" id="item6Game2">
+                <img class ="itemSize" id = "item6Game3Img">
+            </div>
+            <div class ="item7" id="item7Game2">
+                <img class ="itemSize" id = "item7Game3Img">
+            </div>         
+
+
+
+            <div class= "champ1" id = "champ1Game3">
+                <div class ="playerNamePlacement" id = "player1Game3"></div>
+                <img class = "champSize" id = "champ1Game3Pic">
+            </div>
+            <div class= "champ2" id = "champ2Game3">
+                <div class ="playerNamePlacement" id = "player2Game3"></div>
+                <img class = "champSize" id = "champ2Game3Pic">
+            </div>
+            <div class= "champ3" id = "champ3Game3">
+                <div class ="playerNamePlacement" id = "player3Game3"></div>
+                <img class = "champSize" id = "champ3Game3Pic">
+            </div>
+            <div class= "champ4" id = "champ4Game3">
+                <div class ="playerNamePlacement" id = "player4Game3"></div>
+                <img class = "champSize" id = "champ4Game3Pic">
+            </div>
+            <div class= "champ5" id = "champ5Game3">
+                <div class ="playerNamePlacement" id = "player5Game3"></div>
+                <img class = "champSize" id = "champ5Game3Pic">
+            </div>
+            <div class= "champ6" id = "champ6Game3">
+                <div class ="playerNamePlacement" id = "player6Game3"></div>
+                <img class = "champSize" id = "champ6Game3Pic">
+            </div>
+            <div class= "champ7" id = "champ7Game3">
+                <div class ="playerNamePlacement" id = "player7Game3"></div>
+                <img class = "champSize" id = "champ7Game3Pic">
+            </div>
+            <div class= "champ8" id = "champ8Game3">
+                <div class ="playerNamePlacement" id = "player8Game3"></div>
+                <img class = "champSize" id = "champ8Game3Pic">
+            </div>
+            <div class= "champ9" id = "champ9Game3">
+                <div class ="playerNamePlacement" id = "player9Game3"></div>
+                <img class = "champSize" id = "champ9Game3Pic">
+            </div>
+            <div class= "champ10" id = "champ10Game3">
+                <div class ="playerNamePlacement" id = "player10Game3"></div>
+                <img class = "champSize" id = "champ10Game3Pic">
+            </div>
+
+
+
+
+        </div>
+
+        <div id = 'game4Panel'>            
+
+            <input id = 'game4WinLoss' value = {{info.gameWinLoss4}} style = "display: none;">
+            <div class ="championPlayedPlacement" id='championPlayedGame4'>
+                <img src="img.img" id = "championPlayedGame4Pic" style = "border-radius:20px; height:80px;">
+                <div id="game4WinLossFont"></div>
+                <div class ="queuePlayed" id ="queuePlayedGame4"></div>
+            </div>
+            <img class ="summonerSpellPlacement1" id = "game4SummonerSpell1"src= img.img>
+            <img class ="summonerSpellPlacement2"id = "game4SummonerSpell2"src= img.img>
+            <div class = "gameDurationFont"id = "gameDurationGame4"></div>
+            <div class = "kdaFont" id ="kdaGame4"></div>
+            <div class = "kdaRatioFont"id="kdaRatioGame4"></div>
+            <div class = "totalMinionsFont" id="totalMinionsGame4"></div>
+            <div class = "minionsPerMinuteFont" id="minionsPerMinuteGame4"></div>
+            <div class ="item1" id="item1Game4">
+                <img class ="itemSize" id = "item1Game4Img">
+            </div>
+            <div  class ="item2" id="item2Game4">
+                <img class ="itemSize" id = "item2Game4Img">
+            </div>
+            <div class ="item3" id="item3Game4">
+                <img class ="itemSize" id = "item3Game4Img">
+            </div>
+            <div class ="item4" id="item4Game4">
+                <img class ="itemSize" id = "item4Game4Img">
+            </div>
+            <div class ="item5" id="item5Game4">
+                <img class ="itemSize" id = "item5Game4Img">
+            </div>
+            <div class ="item6" id="item6Game4">
+                <img class ="itemSize" id = "item6Game4Img">
+            </div>
+            <div class ="item7" id="item7Game4">
+                <img class ="itemSize" id = "item7Game4Img">
+            </div>         
+
+
+            
+            <div class= "champ1" id = "champ1Game4">
+                <div class ="playerNamePlacement" id = "player1Game4"></div>
+                <img class = "champSize" id = "champ1Game4Pic">
+            </div>
+            <div class= "champ2" id = "champ2Game4">
+                <div class ="playerNamePlacement" id = "player2Game4"></div>
+                <img class = "champSize" id = "champ2Game4Pic">
+            </div>
+            <div class= "champ3" id = "champ3Game4">
+                <div class ="playerNamePlacement" id = "player3Game4"></div>
+                <img class = "champSize" id = "champ3Game4Pic">
+            </div>
+            <div class= "champ4" id = "champ4Game4">
+                <div class ="playerNamePlacement" id = "player4Game4"></div>
+                <img class = "champSize" id = "champ4Game4Pic">
+            </div>
+            <div class= "champ5" id = "champ5Game4">
+                <div class ="playerNamePlacement" id = "player5Game4"></div>
+                <img class = "champSize" id = "champ5Game4Pic">
+            </div>
+            <div class= "champ6" id = "champ6Game4">
+                <div class ="playerNamePlacement" id = "player6Game4"></div>
+                <img class = "champSize" id = "champ6Game4Pic">
+            </div>
+            <div class= "champ7" id = "champ7Game4">
+                <div class ="playerNamePlacement" id = "player7Game4"></div>
+                <img class = "champSize" id = "champ7Game4Pic">
+            </div>
+            <div class= "champ8" id = "champ8Game4">
+                <div class ="playerNamePlacement" id = "player8Game4"></div>
+                <img class = "champSize" id = "champ8Game4Pic">
+            </div>
+            <div class= "champ9" id = "champ9Game4">
+                <div class ="playerNamePlacement" id = "player9Game4"></div>
+                <img class = "champSize" id = "champ9Game4Pic">
+            </div>
+            <div class= "champ10" id = "champ10Game4">
+                <div class ="playerNamePlacement" id = "player10Game4"></div>
+                <img class = "champSize" id = "champ10Game4Pic">
+            </div>
+
+
+        </div>
+
+    </ol>
+
+<div class ="summonerPanel"></div>
+
+<div class="championsPlayedPanel1"></div>
+
+<div class="championsPlayedPanel2">
+    <div class="allQueue"> All</div>
+
+
+    <div class="champion1">
+        <div class="championPlayedIcon1">
+            <img src= "img.img" id ="champPlayed1">
+        </div>
+        <div class = "champPlayedTextFont" id="champ1PlayedText"></div>
+        <div class="champTopPlayedPlacement" id ="champ1TopPlayed"></div>
+        <div class = "champKDARatioPlacement" id = "champ1KDARatio"></div>
+        <div class = "csPlacement" id = "csChamp1"></div>
+        <div class = "csPerMinPlacement" id = "csPerMinChamp1"></div>
+        <div class = "winRateChampPlacement" id = "winRateChamp1"></div>
+        <div class = "winRatePercPlacement" id = "winRatePerc1"></div>
+
+    </div>
+
+
+    <div class="champion2">
+        <div class="championPlayedIcon2">
+            <img src= "img.img" id ="champPlayed2">
+        </div>
+        <div class = "champPlayedTextFont" id="champ2PlayedText"></div>
+        <div class="champTopPlayedPlacement" id ="champ2TopPlayed"></div>
+        <div class = "champKDARatioPlacement" id = "champ2KDARatio"></div>
+        <div class = "csPlacement" id = "csChamp2"></div>
+        <div class = "csPerMinPlacement" id = "csPerMinChamp2"></div>
+        <div class = "winRateChampPlacement" id = "winRateChamp2"></div>
+        <div class = "winRatePercPlacement" id = "winRatePerc2"></div>
+
+    </div>
+
+
+    <div class="champion3">
+        <div class="championPlayedIcon3">
+            <img src= "img.img" id ="champPlayed3">
+        </div>
+        <div></div>
+        <div class = "champPlayedTextFont" id="champ3PlayedText"></div>
+        <div class="champTopPlayedPlacement" id ="champ3TopPlayed"></div>
+        <div class = "champKDARatioPlacement" id = "champ3KDARatio"></div>
+        <div class = "csPlacement" id = "csChamp3"></div>
+        <div class = "csPerMinPlacement" id = "csPerMinChamp3"></div>
+        <div class = "winRateChampPlacement" id = "winRateChamp3"></div>
+        <div class = "winRatePercPlacement" id = "winRatePerc3"></div>
+
+    </div>
+
+
+    <div class="champion4">
+        <div class="championPlayedIcon4">
+            <img src= "img.img" id ="champPlayed4">
+        </div>
+        <div class = "champPlayedTextFont" id="champ4PlayedText"></div>
+        <div class="champTopPlayedPlacement" id ="champ4TopPlayed"></div>
+        <div class = "champKDARatioPlacement" id = "champ4KDARatio"></div>
+        <div class = "csPlacement" id = "csChamp4"></div>
+        <div class = "csPerMinPlacement" id = "csPerMinChamp4"></div>
+        <div class = "winRateChampPlacement" id = "winRateChamp4"></div>
+        <div class = "winRatePercPlacement" id = "winRatePerc4"></div>
+
+    </div>
+
+
+    <div class="champion5">
+        <div class="championPlayedIcon5">
+            <img src= "img.img" id ="champPlayed5">
+        </div>
+        <div class = "champPlayedTextFont" id="champ5PlayedText"></div>
+        <div class="champTopPlayedPlacement" id ="champ5TopPlayed"></div>
+        <div class = "champKDARatioPlacement" id = "champ5KDARatio"></div>
+        <div class = "csPlacement" id = "csChamp5"></div>
+        <div class = "csPerMinPlacement" id = "csPerMinChamp5"></div>
+        <div class = "winRateChampPlacement" id = "winRateChamp5"></div>
+        <div class = "winRatePercPlacement" id = "winRatePerc5"></div>
+
+    </div>
+
+</div>
+</div>
+
+<div class="profileBackground"></div>
+
+
+<div class="rankedSoloPanel1" style="top:125px;left:810px;"></div>
+<div class="rankedSoloPanel2" ></div>
+<div class="rankedFlexPanel1" style="top:125px;left:1225px;"></div>
+<div class="rankedFlexPanel2" ></div>
+<div class="rankedSoloTitle">Ranked Solo/Duo
+    <div class= {{info.soloDuoRank}} , style="top:30px;left:0px;inline-size: 1500px; font-weight: normal;">{{info.soloDuoRank}} {{info.soloDuoRankNumber}}</div>
+</div>
+<div class="rankSoloLP">{{info.soloDuoPoints}} LP</div>
+<div class="rankSoloWinsLosses">{{info.soloWins}} W / {{info.soloLosses}} L</div>
+<div class="rankSoloWinRatio">Win Ratio: {{info.soloDuoWR}}%</div>
+
+
+<div class="rankedFlexTitle">Ranked Flex
+    <div class= {{info.flexRank}} , style="top:30px;left:0px;inline-size: 1500px; font-weight: normal;">{{info.flexRank}} {{info.flexRankNumber}}</div>
+</div>
+<div class="rankFlexLP">{{info.flexPoints}} LP</div>
+<div class="rankFlexWinsLosses">{{info.flexWins}} W / {{info.flexLosses}} L</div>
+<div class="rankFlexWinRatio">Win Ratio: {{info.flexWR}}%</div>
+
+
+<img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/91/Season_2019_-_Diamond_1.png/revision/latest?cb=20181229234917" class = soloDuoPic id = soloRankPic>
+
+<img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/91/Season_2019_-_Diamond_1.png/revision/latest?cb=20181229234917" class ="rankFlex" id = flexRankPic>
+
+
+
+
+<img src="https://ddragon.leagueoflegends.com/cdn/10.15.1/img/profileicon/1.png" id ="profileIcon">
+<div class="accountName">{{info.summonerName}}</div>
+<button id="NA">{{info.region}}</button>
+<div id="summonerLevel">{{info.summonerLevel}}</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+<script>
+
+$( ".playerNamePlacement" ).click(function() {
+  var playerNameClicked = jQuery(this).text();
+  var region = "{{info.region}}"
+  window.location.href = "http://127.0.0.1:8000/v1/"+region+"/" + playerNameClicked;
+
+});
+
+$( "#home" ).click(function() {
+  var home = jQuery(this).text();
+
+    $("#game1Panel").fadeOut(1500);
+    $("#game2Panel").fadeOut(1500);
+    $("#game3Panel").fadeOut(1500);
+    $("#game4Panel").fadeOut(1500);
+    $(".menu").fadeOut(1500);
+    $(".accountName").fadeOut(1500);
+    $("#NA").fadeOut(1500);
+    $("#summonerLevel").fadeOut(1500);
+    $("#profileIcon").fadeOut(1500);
+    $(".profileBackground").fadeOut(1500);
+    $(".rankedSoloPanel1").fadeOut(1500);
+    $(".rankedSoloPanel2").fadeOut(1500);
+    $(".rankedFlexPanel1").fadeOut(1500);
+    $(".rankedFlexPanel2").fadeOut(1500);
+    $(".rankedSoloTitle").fadeOut(1500);
+    $(".rankSoloLP").fadeOut(1500);
+    $(".rankSoloWinsLosses").fadeOut(1500);
+    $(".rankSoloWinRatio").fadeOut(1500);
+    $(".rankedFlexTitle").fadeOut(1500);
+    $(".rankFlexLP").fadeOut(1500);
+    $(".rankFlexWinsLosses").fadeOut(1500);
+    $(".rankFlexWinRatio").fadeOut(1500);
+    $(".soloDuoPic").fadeOut(1500);
+    $(".rankFlex").fadeOut(1500);
+    $(".topMenu").fadeOut(1500);
+    $(".avacadoGG").fadeOut(1500);
+
+
+
+
+  setTimeout(function() {
+            window.location.href =   window.location.href = "http://127.0.0.1:8000/v1/";
+},1650);
+
+
+});
+
+
+
+var champPlayed1 = "{{info.mostChampPlayed1}}"
+var champPlayed2 = "{{info.mostChampPlayed2}}"
+var champPlayed3 = "{{info.mostChampPlayed3}}"
+var champPlayed4 = "{{info.mostChampPlayed4}}"
+var champPlayed5 = "{{info.mostChampPlayed5}}"
+var soloRank = "{{info.soloDuoRank}}";
+var flexRank = "{{info.flexRank}}";
+
+//PUTTING PAST GAMES INTO ARRAY
+var products = "{{info|safe}}".split(',');
+var summonerSpellArray = [101];
+var gameDuration = [201];
+var gameWinLoss = [101];
+var champsPlayedInGame = [101];
+var mapsPlayedInGame = [101];
+var kdaInGame = [301];
+var minionsInGame = [101];
+var itemsBoughtInGame = [601];
+var playersInGame = [1001];
+var allChampsInGame = [1001];
+var top5ChampsKDA = [301];
+var top5ChampsPlayed = [6];
+
+for(i=0; i<products.length; i++){
+    var checkSummonerSpell = products[i].includes("summonerSpell");
+    var checkGameDuration = products[i].includes("gameDuration");
+    var checkGameWinLoss = products[i].includes("gameWinLoss");
+    var champPlayedInGame = products[i].includes("champPlayedInGame");
+    var mapsPlayed = products[i].includes("mapsPlayed");
+    var kda = products[i].includes("kda");
+    var totalMinions = products[i].includes("totalMinions");
+    var itemsBought = products[i].includes("itemsBought");
+    var players = products[i].includes("playersInGame");
+    var allChamps = products[i].includes("allChampsPlayedInGame");
+    var top5KDA = products[i].includes("top5KDA");
+    var top5Champs = products[i].includes("mostChampPlayed");
+
+    if (checkSummonerSpell == true){
+        summonerSpellNotFixed = products[i].split(/(?=[A-Z])/);
+        summonerSpellFixed = summonerSpellNotFixed[3].replace(/.$/,"")
+        summonerSpellArray.push(summonerSpellFixed);
+    }
+
+    if(checkGameDuration == true){
+        gameDurationNotFixed = products[i].split("'");
+        gameDurationFixed = gameDurationNotFixed[3];
+        gameDuration.push(gameDurationFixed) ;
+    }
+
+    if(checkGameWinLoss == true){
+        gameWinLossNotFixed = products[i].split("'");
+        gameWinLossFixed = gameWinLossNotFixed[3];
+        gameWinLoss.push(gameWinLossFixed);
+    }
+
+    if(champPlayedInGame == true){
+        champPlayedInGameNotFixed = products[i].split("'");
+        champPlayedInGameFixed = champPlayedInGameNotFixed[3];
+        champsPlayedInGame.push(champPlayedInGameFixed);
+    }
+
+    if(mapsPlayed == true){
+        mapsPlayedNotFixed = products[i].split("'");
+        mapsPlayedFixed = mapsPlayedNotFixed[3];
+        mapsPlayedInGame.push(mapsPlayedFixed);
+    }
+
+    if(kda == true){
+        kdaNotFixed = products[i].split("'");
+        kdaFixed = kdaNotFixed[2].substring(2);
+        kdaInGame.push(kdaFixed);
+    }
+
+    if(totalMinions == true){
+        totalMinionsNotFixed = products[i].split("'");
+        totalMinionsFixed = totalMinionsNotFixed[2].substring(2);
+        minionsInGame.push(totalMinionsFixed);
+    }
+
+    if(itemsBought == true){
+        itemsBoughtNotFixed = products[i].split("'");
+        itemsBoughtFixed = itemsBoughtNotFixed[2].substring(2);
+        itemsBoughtInGame.push(itemsBoughtFixed);
+    }
+    if(players == true){
+        playersNotFixed = products[i].split("'");
+        playersFixed = playersNotFixed[3];
+        playersInGame.push(playersFixed);
+    }
+    if(allChamps == true){
+        allChampsNotFixed = products[i].split("'");
+        allChampsFixed = allChampsNotFixed[3];
+        allChampsInGame.push(allChampsFixed);
+
+    }
+    if(top5KDA == true){
+        top5KDANotFixed = products[i].split("'");
+        top5KDAFixed = top5KDANotFixed[2].substring(2);
+        top5ChampsKDA.push(top5KDAFixed);
+    }
+    if(top5Champs ==true){
+        top5ChampsNotFixed = products[i].split("'");
+        top5ChammpsFixed = top5ChampsNotFixed[3];
+        top5ChampsPlayed.push(top5ChammpsFixed);
+
+    }
+
+}
+
+
+
+window.onload = function() {
+
+
+
+var count =0;
+
+
+
+
+
+
+//TOP CHAMPS PLAYED RECENTLY
+document.getElementById('champPlayed1').src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + champPlayed1 + ".png"
+document.getElementById('champPlayed2').src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + champPlayed2 + ".png"
+document.getElementById('champPlayed3').src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + champPlayed3 + ".png"
+document.getElementById('champPlayed4').src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + champPlayed4 + ".png"
+document.getElementById('champPlayed5').src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + champPlayed5 + ".png"
+
+
+
+//SOLO
+if (soloRank == "CHALLENGER"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/5/5f/Season_2019_-_Challenger_1.png/revision/latest/scale-to-width-down/280?cb=20181229234913"
+}
+if (soloRank == "GRANDMASTER"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/7/76/Season_2019_-_Grandmaster_1.png/revision/latest/scale-to-width-down/280?cb=20181229234923"
+}
+if (soloRank == "MASTER"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/1/11/Season_2019_-_Master_1.png/revision/latest/scale-to-width-down/280?cb=20181229234929"
+}
+if (soloRank =="DIAMOND"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/9/91/Season_2019_-_Diamond_1.png/revision/latest?cb=20181229234917"
+
+}
+if (soloRank == "PLATINUM"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/7/74/Season_2019_-_Platinum_1.png/revision/latest/scale-to-width-down/280?cb=20181229234932"
+}
+if (soloRank == "GOLD"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/9/96/Season_2019_-_Gold_1.png/revision/latest/scale-to-width-down/280?cb=20181229234920"
+}
+if (soloRank == "SILVER"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/7/70/Season_2019_-_Silver_1.png/revision/latest/scale-to-width-down/280?cb=20181229234936"
+}
+if (soloRank == "BRONZE"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/f/f4/Season_2019_-_Bronze_1.png/revision/latest/scale-to-width-down/280?cb=20181229234910"
+}
+if (soloRank == "IRON"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/0/03/Season_2019_-_Iron_1.png/revision/latest/scale-to-width-down/280?cb=20181229234926"
+}
+if (soloRank == "UNRANKED"){
+    document.getElementById("soloRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/3/38/Season_2019_-_Unranked.png/revision/latest/scale-to-width-down/676?cb=20190908074432"
+    document.getElementById("soloRankPic").style.left="803px";
+
+}
+
+//FLEX
+if (flexRank == "CHALLENGER"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/5/5f/Season_2019_-_Challenger_1.png/revision/latest/scale-to-width-down/280?cb=20181229234913"
+}
+if (flexRank == "GRANDMASTER"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/7/76/Season_2019_-_Grandmaster_1.png/revision/latest/scale-to-width-down/280?cb=20181229234923"
+}
+if (flexRank == "MASTER"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/1/11/Season_2019_-_Master_1.png/revision/latest/scale-to-width-down/280?cb=20181229234929"
+}
+if (flexRank =="DIAMOND"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/9/91/Season_2019_-_Diamond_1.png/revision/latest?cb=20181229234917"
+
+}
+if (flexRank == "PLATINUM"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/7/74/Season_2019_-_Platinum_1.png/revision/latest/scale-to-width-down/280?cb=20181229234932"
+}
+if (flexRank == "GOLD"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/9/96/Season_2019_-_Gold_1.png/revision/latest/scale-to-width-down/280?cb=20181229234920"
+}
+if (flexRank == "SILVER"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/7/70/Season_2019_-_Silver_1.png/revision/latest/scale-to-width-down/280?cb=20181229234936"
+}
+if (flexRank == "BRONZE"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/f/f4/Season_2019_-_Bronze_1.png/revision/latest/scale-to-width-down/280?cb=20181229234910"
+}
+if (flexRank == "IRON"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/0/03/Season_2019_-_Iron_1.png/revision/latest/scale-to-width-down/280?cb=20181229234926"
+}
+if (flexRank == "UNRANKED"){
+    document.getElementById("flexRankPic").src = "https://static.wikia.nocookie.net/leagueoflegends/images/3/38/Season_2019_-_Unranked.png/revision/latest/scale-to-width-down/676?cb=20190908074432"
+    document.getElementById("flexRankPic").style.left="1220px";
+}
+
+//SUMMONER ICON
+var summonerIcon = "{{info.summonerIcon}}";
+document.getElementById("profileIcon").src = "https://ddragon.leagueoflegends.com/cdn/11.24.1/img/profileicon/" + summonerIcon + ".png"
+
+//RECENT GAMES
+
+
+var count =0;
+
+for (let i = 1; i <= 4; i++) {
+    if (document.getElementById('game'+i+'WinLoss').value == "Victory"){
+        document.getElementById("game"+i+"Panel").style.background= "linear-gradient(20deg,rgb(122, 212, 137),rgb(211, 211, 211)";
+        //document.getElementById("game"+i+"WinLoss").id= "winStyle";
+    }
+    else{
+        //document.getElementById("game"+i+"WinLossFont").id= "defeatStyle";
+    }
+
+    count++;
+    document.getElementById('game'+i+'SummonerSpell1').src = "http://ddragon.leagueoflegends.com/cdn/12.1.1/img/spell/Summoner" + summonerSpellArray[count]+".png";
+    count++;
+    document.getElementById('game'+i+'SummonerSpell2').src = "http://ddragon.leagueoflegends.com/cdn/12.1.1/img/spell/Summoner"+summonerSpellArray[count]+".png";
+
+}
+
+
+
+
+document.getElementById("game"+"2"+"WinLossFont").id= "defeatStyle";
+
+
+
+};
+
+
+
+var itemCounter = 1;
+var kdaCounter = 1;
+var gameDurationCounter = 1;
+var championPlayedCounter = 1;
+var playerNameCounter = 1;
+
+for (let i = 1; i<=4;i++){
+    var holder = i;
+
+    document.getElementById('game'+i+'WinLossFont').innerHTML =gameWinLoss[i];
+
+    if(gameWinLoss[i]=="Victory"){
+        document.getElementById("game"+i+"WinLossFont").id= "winStyle";
+    }
+    else{
+        document.getElementById("game"+i+"WinLossFont").id= "defeatStyle";
+    }
+
+
+    document.getElementById('queuePlayedGame'+i).innerHTML = mapsPlayedInGame[i];
+
+    for(let i = 2; i<=2; i++ ){
+        document.getElementById("gameDurationGame"+holder).innerHTML =  gameDuration[gameDurationCounter];
+        document.getElementById("gameDurationGame"+holder).innerHTML +=  " "+ gameDuration[gameDurationCounter+1];
+    }
+
+    for(let i = 1; i<=3; i++){
+        document.getElementById("kdaGame"+holder).innerHTML = kdaInGame[kdaCounter];
+        document.getElementById("kdaGame"+holder).innerHTML += "/"+kdaInGame[kdaCounter+1];
+        document.getElementById("kdaGame"+holder).innerHTML += "/"+kdaInGame[kdaCounter+2];
+
+    }
+
+    killsAssist = (parseInt(kdaInGame[kdaCounter+2]) + parseInt(kdaInGame[kdaCounter]))/parseInt(kdaInGame[kdaCounter+1]);
+    gameDurationInSeconds = ((parseInt(gameDuration[gameDurationCounter]) *60) + parseInt(gameDuration[gameDurationCounter+1]))/60;
+    minionsPerMinute = minionsInGame[i]/gameDurationInSeconds
+    document.getElementById("kdaRatioGame"+i).innerHTML += "KDA " + killsAssist.toFixed(2);
+
+    kdaCounter+=3;
+    gameDurationCounter+=2;
+
+    document.getElementById('totalMinionsGame'+i).innerHTML = minionsInGame[i] +" cs";
+    document.getElementById('minionsPerMinuteGame'+i).innerHTML = minionsPerMinute.toFixed(2) + " cs/min";
+    document.getElementById("championPlayedGame"+i+"Pic").src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + champsPlayedInGame[i] + ".png"
+
+    
+    for(let i = 1; i<=7; i++){
+        if(itemsBoughtInGame[itemCounter] != 0){
+            document.getElementById('item'+i+'Game'+holder+'Img').src = " http://ddragon.leagueoflegends.com/cdn/12.1.1/img/item/"+itemsBoughtInGame[itemCounter]+".png";
+        }
+        itemCounter++;
+    }
+
+
+
+    for(let i =1; i<=10; i++){
+        document.getElementById('champ'+i+'Game'+holder+'Pic').src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + allChampsInGame[championPlayedCounter] + ".png";
+        championPlayedCounter++;
+        document.getElementById('player'+i+'Game'+holder).innerHTML = playersInGame[playerNameCounter];
+        playerNameCounter++;
+    }
+
+
+    
+
+    //queuePlayedGame2
+}
+
+//TOP 5 CHAMPS PLAYED
+top5KDACounter = 1;
+for(let i = 1; i<=5; i++){
+        killAverage = top5ChampsKDA[top5KDACounter+1] / top5ChampsKDA[top5KDACounter];
+        deathAverage = top5ChampsKDA[top5KDACounter+2] / top5ChampsKDA[top5KDACounter];
+        assistAverage = top5ChampsKDA[top5KDACounter+3] / top5ChampsKDA[top5KDACounter];
+        
+        minutesAverage = parseInt(top5ChampsKDA[top5KDACounter+5]) / 60;
+        minionsPerMinuteAverage = top5ChampsKDA[top5KDACounter+4] / minutesAverage;
+        minionsAverage = top5ChampsKDA[top5KDACounter+4] / top5ChampsKDA[top5KDACounter];
+
+        if (top5ChampsKDA[top5KDACounter+6] =="None}" || top5ChampsKDA[top5KDACounter+6] =="None"){
+            wins = 0;
+        }
+        else{
+            wins = parseInt(top5ChampsKDA[top5KDACounter+6]);
+        }
+
+        losses = parseInt(top5ChampsKDA[top5KDACounter]) - wins;
+        winRate = (wins/top5ChampsKDA[top5KDACounter] *100).toFixed(2);
+        winRateString = winRate.toString().slice(0, -3);
+        kdaRatioTopChamps = ((killAverage + assistAverage) / deathAverage).toFixed(2);
+
+        document.getElementById("champ"+i+"TopPlayed").innerHTML += (killAverage.toFixed(2))+" / ";
+        document.getElementById("champ"+i+"TopPlayed").innerHTML += (deathAverage.toFixed(2))+" / ";
+        document.getElementById("champ"+i+"TopPlayed").innerHTML += (assistAverage.toFixed(2));
+        document.getElementById("champ"+i+"PlayedText").innerHTML += top5ChampsPlayed[i];
+        document.getElementById("csChamp"+i ).innerHTML += "cs "+minionsAverage.toFixed(2);
+        document.getElementById("csPerMinChamp"+i).innerHTML += minionsPerMinuteAverage.toFixed(2) +" cs/min";
+        document.getElementById("champ"+i+"KDARatio").innerHTML +=  "KDA "+kdaRatioTopChamps;
+        document.getElementById("winRateChamp"+i).innerHTML += wins + "W - "+ losses + "L";
+        document.getElementById("winRatePerc"+i).innerHTML += winRateString+"%";
+
+    top5KDACounter+=7;
+}
+
+document.getElementById("championPlayedGame"+i+"Pic").src = "http://ddragon.leagueoflegends.com/cdn/11.24.1/img/champion/" + champsPlayedInGame[i] + ".png"
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>
